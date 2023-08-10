@@ -9,9 +9,3 @@ gsettings set org.gnome.desktop.a11y.magnifier contrast-blue 1
 gsettings set org.gnome.desktop.a11y.magnifier contrast-red 1 
 gsettings set org.gnome.desktop.a11y.magnifier contrast-green 1
 gsettings set org.gnome.desktop.a11y.applications screen-magnifier-enabled true
-alias_name="alias demagnification"
-alias_command="'gsettings set org.gnome.desktop.a11y.applications screen-magnifier-enabled false'"
-if ! grep -qF "$alias_name" ~/.zshrc; then
-    echo "$alias_name=$alias_command" >> ~/.zshrc
-fi
-source ~/.zshrc
