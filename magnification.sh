@@ -14,3 +14,4 @@ alias_command="gsettings set org.gnome.desktop.a11y.applications screen-magnifie
 if ! grep -qF "$alias_name" ~/.zshrc; then
     echo "$alias_name=$alias_command" >> ~/.zshrc
 fi
+source ~/.zshrc
